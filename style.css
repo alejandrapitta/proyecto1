@@ -1,3 +1,7 @@
+
+
+
+/* punto: referenciar clases, numeral: referenciar id */
 #cajitas {
     display: flex;    
 }
@@ -9,14 +13,26 @@
 
 #c1 {
     background-color: blueviolet;
+    border: 5px solid black; 
 }
 
 #c2 {
-    background-color: darkmagenta;
+    background-color: darkmagenta; 
+    margin-top: 150px;
 }
+
 
 #c3 {
     background-color: violet;
+    border-radius: 20%;
+}
+
+#c4{
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+#c4:hover{ background-color: gold;
 }
 
 #nombres{
