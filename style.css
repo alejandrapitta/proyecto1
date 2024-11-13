@@ -40,14 +40,40 @@
 }
 
 nav{
-     
-
+padding: 15px;
+background: linear-gradient(#da6f93, #9198e5);
 }
  nav ul{
 display: flex;
- }
+background-color: hotpink;
+background-image:url(https://i.pinimg.com/474x/56/a0/69/56a069f488bb6ce3d5fa39f44b5db776.jpg);
+/* list-style para quitar las viñetas o numeros de la lista */
+list-style: none;
+}
+
+/* margin espacio alrededor */
+/* pading espacio interior  */
 
 nav ul li {
+/* text-tranfrom: para poner mayusculas o minusculas todas las letras del contenido */
+text-transform: uppercase;   
 margin: auto;
-background-color: blue;
+padding: 15px;
+font-weight: 700;
+/* font-weight para cambiar el grosor de la letra */
+color: rgb(51, 6, 51);
+background-color: #c05cc0;
+}
+
+.submenu{
+display: none;
+background: linear-gradient(#e76dc5, #8b8eb4);
+}
+
+nav ul li:hover{
+    background: linear-gradient(#e76dc5, #8b8eb4);
+}
+
+nav ul li:hover ul{
+    display: block;
 }
