@@ -38,3 +38,16 @@
 #nombres{
  display: flex; justify-content: space-around;   
 }
+
+nav{
+     
+
+}
+ nav ul{
+display: flex;
+ }
+
+nav ul li {
+margin: auto;
+background-color: blue;
+}
