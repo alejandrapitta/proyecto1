@@ -1,4 +1,14 @@
 
+
+html{ 
+    cursor: url(png-clipart-cartoon-birds-cartoon-birds-lovely_resized.png),grab;
+
+}
+a{
+    cursor: url(png-clipart-cartoon-birds-cartoon-birds-lovely_resized.png),grab;
+}
+
+
 body{
     background-color: rgb(214, 148, 183);
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/107/886/small/pink-waterclor-texture-background-free-vector.jpg");
@@ -6,6 +16,28 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+#inicio-imagen{
+    position: fixed;
+    left: 80%;
+    top: 65%;
+    width: 50px;
+    animation: latido 4s infinite;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1) rotate(360deg);
+    }
+
+    20% {
+        transform: scale(1.25) rotate(360deg);
+    }
+
+    40% {
+        transform: scale(1.5) rotate(360deg);
+    }
 }
 
 /* punto: referenciar clases, numeral: referenciar id */
@@ -84,3 +116,8 @@ nav ul li:hover{
 nav ul li:hover ul{
     display: block;
 }
+
+
+
+
+

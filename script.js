@@ -37,29 +37,71 @@ console.log(5 < 8);// menor que
 console.log(5 >= 6);// mayor o igual
 console.log(5 <= 7);// menor o igual
 
-console.log(5 == 5);// igual que 
+console.log(5 == "5");// igual que 
+console.log(5 === "5");// extrictamente igual que 
 console.log(5 != 7);// no es igual
 
-console.log("a">"b");
+// Puedo comparar texto
+console.log("a">"b"); 
+console.log("cortazar" > "Navarro");
+
 
 let premium = true;
 
 if (premium) {
     console.log("tienes cuenta premium");
+    alert ("Bienvenido" + nombreUsuario)
 }
+
+// si no se cumple la condicion if, la opcion else no se va a ejecutar 
 
 else if (edad>=18){
-    alert("Puedes crear cuenta");
-} else {
-    alert("no puedes crear cuenta");
+    console.log("Puedes crear cuenta");
+}
+else {
+    console.log("no puedes crear cuenta");
 }
 
-
-// interactuar con html dom
-//        recojo el elemento// que hago//
+// Para interactuar con html dom
+// SELECTORES
+//        recojo el elemento    // que hago//
 document.getElementById("texto").innerHTML = "Holaaa "+nombreUsuario;
 
 document.getElementsByClassName("hola").innerHTML = "<p> Hola otra vez </p>";
 
 document.getElementsByClassName("articulo").innerHTML = "gasdagd0";
 
+ 
+document.getElementById("texto").innerHTML = "holaaaa"+nombreUsuario;
+    document.getElementById("caja").innerHTML ="<p>Hasta luego</p>"
+    //con .innerhtml voy agregarle texo directamrnte desde java a html
+
+// si quiero que me seleccione el primer elemento
+//  document.querySelector("#texto").innerHTML = "123456"
+//  si quiero que me seleccione todos los elementos 
+// document.querySelectorAll.innerHTML =
+
+let texto = document.getElementById("texto");
+texto.innerHTML = "He guardado mi selector en una variable";
+
+
+
+    //FUNCIONES
+
+    function saludar(){
+
+        alert("Bienvenido")
+    }
+    saludar();
+
+    function modoNoche(){
+   document.body.style.backgroundColor = "black";
+
+    }
+    function modoDia(){
+       document.body.style.background = "white";
+    }
+
+
+
+    
