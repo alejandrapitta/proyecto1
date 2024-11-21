@@ -101,7 +101,18 @@ texto.innerHTML = "He guardado mi selector en una variable";
     function modoDia(){
        document.body.style.background = "white";
     }
+// --------estrellas cayendo------------------
+    function createStar() {
+        const Star = document.createElement('div');
+        Star.classList.add('star');
+        Star.style.left = Math.random() * 100 + 'vw';
+        Star.style.animationDuration = Math.random() * 6 + 9 + 's';
+        document.body.appendChild(Star);
+        setTimeout(() => {
+        Star.remove();
+        }, 5000);
+    }
+    setInterval(createStar, 300);
 
-
-
+// -------------------------------------------
     
