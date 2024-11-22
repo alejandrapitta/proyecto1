@@ -116,3 +116,5 @@ texto.innerHTML = "He guardado mi selector en una variable";
 
 // -------------------------------------------
     
+
+
